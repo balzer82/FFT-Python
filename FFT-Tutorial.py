@@ -254,24 +254,26 @@ Yhann = np.fft.fft(hann*s)
 plt.figure(figsize=(7,3))
 plt.subplot(121)
 plt.plot(t,s)
+plt.title('Time Domain Signal')
 plt.ylim(np.min(s)*3, np.max(s)*3)
 plt.xlabel('Time ($s$)')
 plt.ylabel('Amplitude ($Unit$)')
 
 plt.subplot(122)
 plt.plot(X, 2.0*np.abs(Yhann[:N])/N)
+plt.title('Frequency Domain Signal')
 plt.xlabel('Frequency ($Hz$)')
 plt.ylabel('Amplitude ($Unit$)')
 
 plt.annotate("FFT",
             xy=(0.0, 0.1), xycoords='axes fraction',
             xytext=(-0.8, 0.2), textcoords='axes fraction',
-            size=50, va="center", ha="center",
+            size=30, va="center", ha="center",
             arrowprops=dict(arrowstyle="simple",
                             connectionstyle="arc3,rad=0.2"))
 plt.tight_layout()
 
-plt.savefig('FFT.png',bbox_inches='tight', dpi=300)
+plt.savefig('FFT.png',bbox_inches='tight', dpi=150, transparent=True)
 
 # <markdowncell>
 
@@ -312,6 +314,7 @@ plt.figure(figsize=(14,5))
 df.Load.plot()
 plt.title('Vertical Grid Load Germany 2013')
 plt.ylabel('Power [$MW$]')
+plt.savefig('VerticalGridLoadGermany2013.png',bbox_inches='tight', dpi=150, transparent=True)
 
 # <headingcell level=3>
 
@@ -362,6 +365,7 @@ plt.xticks([12, 24, 33, 84, 168])
 plt.xlim(0, 180)
 plt.ylim(0, 1500)
 plt.xlabel('Period ($h$)')
+plt.savefig('VerticalGridLoadGermany2013-FFT.png',bbox_inches='tight', dpi=150, transparent=True)
 
 # <markdowncell>
 
