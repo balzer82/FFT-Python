@@ -12,6 +12,15 @@ Including
 * How to scale the x- and y-axis in the amplitude spectrum
 * Leakage Effect
 * Windowing
-* Real world data example
 
-#### [Take a look at it](http://nbviewer.ipython.org/github/balzer82/FFT-Python/blob/master/FFT-Tutorial.ipynb)
+### [Take a look at the IPython Notebook](http://nbviewer.ipython.org/github/balzer82/FFT-Python/blob/master/FFT-Tutorial.ipynb)
+
+#### Real World Data Example
+
+From
+
+![Vertical Netload Germany 2013](https://raw.githubusercontent.com/balzer82/FFT-Python/master/VerticalGridLoadGermany2013.png)
+
+To
+
+![Periods in NetLoad](https://raw.githubusercontent.com/balzer82/FFT-Python/master/VerticalGridLoadGermany2013-FFT.png)
